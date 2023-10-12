@@ -2,7 +2,7 @@ import jbook.util.Input;
 
 public class Esercizio2 {
 
-    public static int mcd(int x, int y){
+    static int mcd(int x, int y){
         
         int resto;
 
@@ -10,11 +10,11 @@ public class Esercizio2 {
 
         while (resto > 0){
             resto = x % y;
-            x = x / y;
+            x = y;
             y = resto;
         }
-
-        return y;
+        
+        return x;
     }
     public static void main(String[] args){
         
@@ -33,7 +33,7 @@ public class Esercizio2 {
         }
         else{
 
-            System.out.print("Operazione impossibile");
+            System.out.println("Operazione impossibile");
         }
     }
 }
