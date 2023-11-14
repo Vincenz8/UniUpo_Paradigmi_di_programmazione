@@ -67,21 +67,28 @@ Questa e' la lista delle parole:
 
 ## Esercizi Comprehension
 1. crea una lista con il cubo dei numeri da 1 a 20 inclusi.
+
+
 2. crea una lista con il cubo dei numeri divisibili per 4 da 1 a 20 inclusi.
+
+
 3. crea una lista con tutti i cubi divisibili per 4 dei numeri da 1 a 20 inclusi.
+
+
 4. scrivi una funziona exps1 che accetta 3 parametri:
-      1. esponente
-      2. limite
-      3. base
+   - esponente
+   - limite
+   - base
    
-     e ritorna una lista con tutti i numeri da 1 al limite (inclusi) che
-     sono divisibili per la base elevata all'esponente
+   e ritorna una lista con tutti i numeri da 1 al limite (inclusi) che
+sono divisibili per la base elevata all'esponente
 
          exps1(1,10,2) =>[2, 4, 6, 8, 10]
+
 5. scrivi una funziona exps2 che accetta 3 parametri:
-   1. esponente
-   2. limite
-   3. base
+   - esponente
+   - limite
+   - base
 
    e ritorna una lista con tutti i numeri da 1 al limite (inclusi) 
    elevati all'esponente, se questo e' divisibile per la base
@@ -90,9 +97,13 @@ Questa e' la lista delle parole:
 6. scrivi una funzione areEq che accetta gli stessi parametri di exps1 e exps2
 e ritorna True se e solo se exps1 e exps2 applicate a questi
 parametri ritornano liste uguali.
+
+
 7. scrivi un'espressione che chiama la funzione areEq con exp 
 da 2 a 9 (inclusi), base da 2 a 9, e limit 30 e ritorna una lista di
 tuple (exp, base) per tutti le coppie exp, base per cui areEq ritorna False.
+
+
 8. assumendo che una tripla (stringa, booleano, lista persone) rappresenti una
 persona (nome, sesso, lista dei figli) con Donna associata True e Uomo a False
 ad esempio:
@@ -107,6 +118,8 @@ ad esempio:
 
    - la lista delle persone il cui nome inizia con “P”
    - la lista delle coppie (nome madre, nome figlia/o)
+
+
 9. Riscrivi la funzione righeColonne che prende in input una lista 
 di stringhe `[r1,...,rn]` tutte della stessa lunghezza m, e ritorna 
 la lista di stringhe `[c1,...,cm]` dove  `ci=r1[i]r2[i]....rn[i]`
