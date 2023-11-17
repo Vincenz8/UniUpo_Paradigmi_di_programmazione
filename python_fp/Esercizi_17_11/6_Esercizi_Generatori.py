@@ -1,11 +1,11 @@
 def mio_range(start: int, end: int, step: int):
-	
-	if abs(step) > abs(start - end):
-		if (start - end) * step < 0:
-			while start != end:
-				yield start
-				start += step
-
+	if (start - end) * step < 0:
+		while start != end:
+			yield start
+			if abs(step) > abs(start - end):
+				break
+			start += step
+			
 
 def gen_fib(n: int):
 	fib_1, fib_2 = 0, 0
