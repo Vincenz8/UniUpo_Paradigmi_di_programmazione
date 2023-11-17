@@ -1,21 +1,21 @@
 def cubo_1_20() -> list[int]:
-	return [pow(x, 3) for x in range(1, 21)]
+	return [(x ** 3) for x in range(1, 21)]
 
 
 def cubo_1_20_div() -> list[int]:
-	return [pow(x, 3) for x in range(1, 21) if (x % 4) == 0]
+	return [(x ** 3) for x in range(1, 21) if (x % 4) == 0]
 
 
 def cubo_1_20_div2() -> list[int]:
-	return [pow(x, 3) for x in range(1, 21) if (pow(x, 3) % 4) == 0]
+	return [(x ** 3) for x in range(1, 21) if ((x ** 3) % 4) == 0]
 
 
 def exps1(esponente: int, limite: int, base: int) -> list[int]:
-	return [x for x in range(1, limite + 1) if x % pow(base, esponente) == 0]
+	return [x for x in range(1, limite + 1) if x % (base ** esponente) == 0]
 	
 	
 def exps2(esponente: int, limite: int, base: int) -> list[int]:
-	return [pow(x, esponente) for x in range(1, limite + 1) if x % base == 0]
+	return [(x ** esponente) for x in range(1, limite + 1) if x % base == 0]
 
 
 def are_q(esponente: int, limite: int, base: int):
