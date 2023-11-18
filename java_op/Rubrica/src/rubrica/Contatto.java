@@ -8,7 +8,7 @@ public class Contatto {
     private ArrayList<String> numeriTel;
 
     {
-        numeriTel = new ArrayList<String>();
+        numeriTel = new ArrayList<>();
     }
 
 

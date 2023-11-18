@@ -18,7 +18,7 @@ public class Rubrica {
 
     {
         numRubriche += 1;
-        rubrica = new ArrayList<Contatto>();
+        rubrica = new ArrayList<>();
     }
 
     public Rubrica(String nome, int maxDim){
@@ -70,7 +70,7 @@ public class Rubrica {
     }
 
     public ArrayList<Contatto> cercaPerNome(String nome) {
-        ArrayList<Contatto> c_cercati = new ArrayList<Contatto>();
+        ArrayList<Contatto> c_cercati = new ArrayList<>();
 
         for (Contatto c_rubrica: rubrica) {
             if (c_rubrica.matchNome(nome)) {
@@ -81,7 +81,7 @@ public class Rubrica {
     }
 
     public ArrayList<Contatto> cercaPerEmail(String email) {
-        ArrayList<Contatto> c_cercati = new ArrayList<Contatto>();
+        ArrayList<Contatto> c_cercati = new ArrayList<>();
 
         for (Contatto c_rubrica: rubrica) {
             if (c_rubrica.matchEmail(email)) {
